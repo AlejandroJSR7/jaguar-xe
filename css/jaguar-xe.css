@@ -14,19 +14,25 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  padding-top: 5%;
+  overflow: hidden;
+  padding-top: 20px;
 }
+  @media screen and (min-height: 350px) {
+    .vh100-home{
+      padding-top: 5%;
+    }
+  }
 .container{
   margin-left: 20px;
   margin-right: 20px;
   max-width: 80%;
 }
-@media screen and (min-width: 480px) {
-  .container{
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: 480px) {
+    .container{
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-}
 .box-welcome{
   background-color: rgba(0,0,0,.75);
   border-radius: 10px;
@@ -45,7 +51,6 @@ body {
   font-weight: 400;
   margin-bottom: 20px;
 }
-
 .btn{
   border: none;
   display: inline-block;
